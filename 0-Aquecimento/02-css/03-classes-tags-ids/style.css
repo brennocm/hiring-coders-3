@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+}
+
+#login{
+    background-color: black;
+    color: lightgreen;
+}
+
+#registre{
+    background-color: blueviolet;
+    color: white;
+}
+
+.copy{
+    font-size: 8px;
+
+}
