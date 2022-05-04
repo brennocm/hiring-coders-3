@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #a09038;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 25px;
+} 
+
+#animation{
+    transition: 300ms;
+}
+
+body{
+    height: 100vh;
+    background-image: url(./img/main-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center flex;
+    background-size: cover;
+    border-right: 5px solid white;
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 5px solid white;
+    height: 20%;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    padding: 15px;   
+}
+
+header ul li a:hover{
+    color: white;
+    text-decoration: underline;
+    transition: 300ms;
+}
+
+.container{
+    text-align: center;
+    margin: 25px;
+}
+
+.container .name h1{
+    font-size: 70px;
+    margin: 25px;
+}
+
+.container .name h5{
+    font-size: 35px;
+    margin: 35px;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+    color: white;
+}
+
+.form{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.form input{
+    width: 50%;
+    padding: 5px 10px;
+    border:  none;
+    border-radius: 5px 0 0 5px;
+}
+
+.form button{
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #a09038 50%, #9c551b 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0 5px 5px 0;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+
+.form button:hover{
+    background-position:  left bottom;
+}
+
+.active{
+    display: block !important;
+}
+
+@media only screen and (max-widht: 768px){
+    .form{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-widht: 480px){
+    .container .name h1{
+        font-size: 30px;
+    }
+
+    .container .name h5{
+        font-size: 15px;
+    }
+
+    #about p{
+        max-width: 80%;
+        text-align: justify;
+    }
+
+}

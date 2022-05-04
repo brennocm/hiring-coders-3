@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6973b2ca41.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Brenno Cavalcante</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="img/icon.png" alt="Logo" width="15%">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="http://github.com/brennocm">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="http://linkedin.com/inbrennocm">linkedin</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Brenno Cavalcante</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-arrow-turn-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p class="about-">
+                    Um estudante de Análise e Desenvolvimento na UNICAMP, a procura da primeira oportuniade de trabalho. Por conta disso, estou utilizando todo meu tempo livre para me dedicar aos estudos. Esse projeto é parte da semana de aquecimento do HIRING CODERS # 3
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor email!">
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
