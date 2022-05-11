@@ -1,1 +1,3 @@
-Projeto realizado em um repositório particular
+Projeto realizado em um repositório próprio:
+
+https://github.com/brennocm/validador-cpf
