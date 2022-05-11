@@ -1,0 +1,1 @@
+Módulo teórico, envolvendo o que é SPA, PWA e WebComponents
