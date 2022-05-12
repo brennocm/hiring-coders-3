@@ -1,0 +1,6 @@
+- Tupla
+- Enum
+- Any
+- Unknow
+- Null
+- Object
